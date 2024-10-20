@@ -162,6 +162,7 @@ button {
 .section {
   padding: 120px 0;
 }
+
 .main-title {
   background: #2e2f42;
   padding-top: 188px;
@@ -172,9 +173,10 @@ button {
     ),
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  max-width: 1440рх;
+  background-position: center;
+  background-size: cover;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 .main-title-text {
@@ -465,8 +467,11 @@ button {
 
 .footer-wrap {
   display: flex;
-  gap: 120px;
-  align-items: flex-start;
+  align-items: baseline;
+}
+
+.container-logo {
+  margin-right: 120px;
 }
 
 .footer-personal-soc-link {
@@ -483,4 +488,11 @@ button {
 .footer-personal-soc-link:hover,
 .footer-personal-soc-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-personal-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
